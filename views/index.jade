@@ -1,97 +1,14 @@
 extends layout
 
 block content
-  .row
-    .twelve.columns
-      h1 Welcome to my site!
+  div.nav
+    a(href='/')
+      h1.logo Jerry Reptak
+    ul.clearfix
+      li.jobs.button Jobs
+      li.projects.button Projects
 
-  .row
-    .twelve.columns
-      p.
-        My name is Jerry Reptak. Right now I'm a computer science at Rutgers University
-        in New Brunswick graduating in May 2013. 
+  include jobs
 
-  .row.work
-    .twelve.columns
-      h2 Work Experience
-    .row.peek
-      .one.columns.offset-by-one
-        a(href="http://peek.ly", target="_blank")
-          img(src="http://www.placekitten.com/60/60", alt="Peek")
-      .ten.columns
-        p
-          a(href="http://peek.ly", target="_blank") Peek 
-          | creates cloud products for feature phones. I worked as a DevOps contractor there from May 2012
-          | to September 2012, and contracted for a project in November 2012. 
-          
-        li.item 
-          | I wrote backend server code in NodeJS. I created an API for push notifications, a Redis
-          | master/slave proxy, an application for email attachment parsing and saving to S3. I followed
-          | Test Driven Development for personal projects.
-          
-        li.item 
-          | Administrated systems using Fabric and Chef.
+  include projects
 
-        li.item 
-          | Lead the development of a puzzle game created for Android using AndEngine.
-    
-    .row.smil
-      .one.columns.offset-by-one
-        a(href="http://sm.rutgers.edu", target="_blank")
-          img(src="http://www.placekitten.com/60/60", alt="Social Media Information Lab")
-      .ten.columns
-        p
-          a(href="http://sm.rutgers.edu", target="_blank") Social Media Information Lab 
-          | is a research group at Rutgers University that researchs social media. I worked as a researcher
-          | focusing on front-end development. 
-        li.item 
-          | Created front-end applications using Twitter Bootstrap, Zurb Foundation, and plain CSS/HTML. 
-        li.item 
-          | Developed an application, <a href="sm.rutgers.edu/thebeat" target="_blank">The Beat</a>, that 
-          | showed the physical Google StreetView location of Instagram pictures. 
-          | Mentioned by: The New York Times, The Verge, The Atlantic, Mashable, BetaBeat.
-        li.item 
-          | Working on a real-time analytics application for cities. Uses different forms of social media 
-          | to display what’s happening and where in a city.
-
-    .row.lcsr
-      .one.columns.offset-by-one
-        a(href="http://www.cs.rutgers.edu/lcsr", target="_blank")
-          img(src="http://www.placekitten.com/60/60", alt="Laboratory for Computer Science Research")
-      .ten.columns
-        p
-          a(href="http://www.cs.rutgers.edu/lcsr", target="_blank") Laboratory for Computer Science Research
-          | is the group in charge of operating all the machines for the Computer Science Department at 
-          | Rutgers University.
-        li.item
-          | Maintain CentOS machines and computer labs for the undergrads and grads in computer science 
-          | (1000+ users).
-        li.item
-          | Create custom Linux packages/programs that are requested by faculty or students.
-
-  .row.extra
-    .twelve.columns
-      h2 Extra Curriculars
-    .row.peerleader
-      .one.columns.offset-by-one
-        a(href="http://www.cs.rutgers.edu", target="_blank")
-          img(src="http://www.placekitten.com/60/60", alt="Department of Computer Science Research")
-      .ten.columns
-        p 
-          | I was a peer leader for an Introductory to Computer Science class. I taught weekly recitations 
-          | where I taught undergraduates basics in Computer Science and Java programming.
-    
-    .row.ruslug
-      .one.columns.offset-by-one
-        a(href="http://ruslug.rutgers.edu", target="_blank")
-          img(src="http://www.placekitten.com/60/60", alt="Rutgers University Student Linux User Group")
-      .ten.columns
-        p
-          | I was the Treasurer and President of the 
-          | <a href="http://ruslug.rutgers.edu">Rutgers University Student Linux User Group</a>.
-        li.item 
-          | Organize events for Linux Installfests, Linux instructional trainings, and other Linux 
-          | and Open Source events.
-        li.item 
-          | Determine group budget and handle club finances. Reach out to open source companies 
-          | for donations.

@@ -1,8 +1,5 @@
-
-/*
- * GET home page.
- */
+var data = require('../data');
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('index', data);
 };

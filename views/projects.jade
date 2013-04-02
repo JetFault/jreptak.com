@@ -1,0 +1,13 @@
+block content
+
+  mixin project(proj)
+    .project
+      a(href=proj.link)
+        h2.project-title= proj.title
+      p.project-desc= proj.desc 
+
+  .projects
+    .box
+      h2.subtitle Projects
+      for project in projects
+        +project(project)

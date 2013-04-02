@@ -1,0 +1,13 @@
+block content
+
+  mixin job(jb)
+    .project
+      a(href=jb.link)
+        h2.project-title= jb.title
+      p.project-desc= jb.desc 
+
+  .jobs
+    .box
+      h2.subtitle Jobs
+      for jb in jobs
+        +job(jb)
